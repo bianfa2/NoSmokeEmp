@@ -1,0 +1,29 @@
+.tab-icon{
+    font-size: 150%;
+}
+
+.icons {
+    font-size: 1.5em;
+}
+
+.label-custom {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.label-custom2 {
+    font-size: 15px;
+}
+
+.routine_title {
+    font-size: 25px;
+    color: #000 !important;
+}
+
+.routine_title2 {
+    font-size: 25px;
+}
+
+.none {
+    display: none;
+}

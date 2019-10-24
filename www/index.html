@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>NoSmoke</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#2196f3">
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
+    <link rel="stylesheet" href="css/framework7.bundle.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/globalStyles.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+
+  <body>
+    <div id="app">
+
+      <div class="statusbar"></div>
+
+      <div class="view view-main">
+
+        <div data-name="home" class="page">
+
+          <!-- Top Navbar -->
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="title">No Smoke</div>
+              <div class="right">                
+                <a href="/lighters/" class="link"><i class="f7-icons">fire_fill</i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab -->
+          <div class="toolbar tabbar toolbar-bottom">
+            <div class="toolbar-inner">
+              <a href="#tab-1" class="tab-link"><i class="fas fa-notes-medical tab-icon"></i></a>
+              <a href="#tab-2" class="tab-link tab-link-active"><i class="fas fa-futbol tab-icon"></i></a>
+              <a href="#tab-3" class="tab-link"><i class="fas fa-smoking tab-icon"></i></a>
+            </div>
+          </div>
+          <div class="tabs-swipeable-wrap">
+            <div class="tabs">
+              <div id="tab-1" class="page-content tab">
+                <div class="block">
+                  <div class="block-title">Beneficios y consecuencias </div>
+                  <div class="list">
+                    <ul>
+                        <li>
+                            <a href="/brain/" class="item-link item-content">
+                              <div class="item-media"><i class="fas fa-brain fa-2x"></i></div>
+                              <div class="item-inner">
+                                <div class="item-title">Cerebro</div>
+                                <div class="item-after">...</div>
+                              </div>
+                            </a>
+                          </li>
+                      <li>
+                        <a href="/head/" class="item-link item-content">
+                          <div class="item-media"><i class="far fa-flushed fa-2x"></i></div>
+                          <div class="item-inner">
+                            <div class="item-title">Cabeza y rostro</div>
+                            <div class="item-after">...</div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/heart/" class="item-link item-content">
+                          <div class="item-media"><i class="far fa-heart fa-2x"></i></div>
+                          <div class="item-inner">
+                            <div class="item-title">Corazón</div>
+                            <div class="item-after">...</div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/lung/" class="item-link item-content">
+                          <div class="item-media"><i class="fas fa-wind fa-2x"></i></div>
+                          <div class="item-inner">
+                            <div class="item-title">Pulmon</div>
+                            <div class="item-after">...</div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/dna/" class="item-link item-content">
+                          <div class="item-media"><i class="fas fa-dna fa-2x"></i></div>
+                          <div class="item-inner">
+                            <div class="item-title">ADN</div>
+                            <div class="item-after">...</div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/abdomen/" class="item-link item-content">
+                          <div class="item-media"><i class="fab fa-hubspot fa-2x"></i></div>
+                          <div class="item-inner">
+                            <div class="item-title">Abdomen y Hormonas</div>
+                            <div class="item-after">...</div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div id="tab-2" class="page-content tab tab-active">
+                <div class="block">
+                  <div class="card demo-card-header-pic">
+                    <div style="background-image:url(./img/heart.jpg)" class="card-header align-items-flex-end routine_title">Cardio</div>
+                    <div class="card-content card-content-padding">
+                      <!-- <p class="date">Posted on January 21, 2015</p> -->
+                      <p>Recuerda que el cardio es cualquier ejercicio cardiovascular tales como: caminar, correr, bicicleta, natación, saltar cuerda, entre otros, siempre elija en el que se sienta mejor.</p>
+                    </div>
+                    <div class="card-footer"><a href="#" class="link"></a><a href="/cardio/" class="link">Ver rutina</a></div>
+                  </div>
+                  <div class="card demo-card-header-pic">
+                    <div style="background-image:url(./img/fitness.jpg)" class="card-header align-items-flex-end routine_title2">Cardio y fitness</div>
+                    <div class="card-content card-content-padding">
+                      <!-- <p class="date">Posted on January 21, 2015</p> -->
+                      <p>Cardio y fitness es la combinación entre estas dos disciplinas, tales como caminar y hacer pesas, crossfit, weightlifting, entre otras.</p>
+                    </div>
+                    <div class="card-footer"><a href="#" class="link"></a><a href="/fitness/" class="link">Ver rutina</a></div>
+                  </div>
+                </div>
+              </div>
+              <div id="tab-3" class="page-content tab">
+                <div class="block">
+
+                  <div class="col text-align-center" id="gauge"></div>
+                  <div class="col text-align-center">
+                    <div class="row">
+                      <div class="col-5"></div>
+                      <div class="col-90">
+                        <div class="card" style="margin-top: 20px;">
+                          <div class="card-content card-content-padding label-custom"><span class="label-custom2">Último cigarro fumado</span> <br> <span id="days">0</span> días - <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span></div>
+                        </div>
+                      </div>
+                      <div class="col-5"></div>
+                    </div>
+                  </div>
+
+                  <div class="row text-align-center">
+                    <div class="col-50">
+                      <div class="card">
+                        <div class="card-content card-content-padding label-custom"><span class="label-custom2">Total encendidos </span> <br> <span id="totalBox">0</span> </div>
+                      </div>
+                    </div>
+                    <div class="col-50">
+                      <div class="card">
+                        <div class="card-content card-content-padding label-custom"><span class="label-custom2">Dinero Malgastado</span> <br> $ <span id="wasted">0</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- App Content -->
+          <div class="page-content">
+            <h2>Hello guys!!!</h2>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <script type="text/javascript" src="js/framework7.bundle.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/socket.js"></script>
+    <script type="text/javascript" src="js/timer.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>  
+    <script type="text/javascript" src="js/lighters-page.js"></script>
+    <script type="text/javascript" src="js/statistics-page.js"></script>
+    <script type="text/javascript" src="js/cardio-page.js"></script>  
+
+  </body>
+</html>
