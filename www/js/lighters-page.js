@@ -3,7 +3,7 @@ function add_lighter(){
         if(!isNaN(parseInt(reference))){
             app.dialog.preloader('Agregando...');
             $.ajax({
-                url: 'http://35.239.112.72:3000/api/lighter/id='+reference,
+                url: 'http://34.69.242.97:3000/api/lighter/id='+reference,
                 dataType: "json",
                 type: 'GET',
                 contentType: "application/jsonp;charset=utf-8",
